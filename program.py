@@ -17,7 +17,6 @@ def abc_algorithm(objective_function, num_Variables, colony_Size, num_iterations
     trial = [0] * colony_Size
     limit = colony_Size * num_Variables
     
-
     for _ in range(colony_Size):
         solution = np.random.uniform(LB, UB, num_Variables)
         obj_func = objective_function(solution)
@@ -113,7 +112,6 @@ def abc_algorithm(objective_function, num_Variables, colony_Size, num_iterations
 
 
     return best_Solution, best_Fitness, trial
-
 
 colony_Size = 50
 num_Variables = 5

@@ -16,8 +16,6 @@ def abc_algorithm(objective_function, num_Variables, colony_Size, num_iterations
     colony = []
     trial = [0] * colony_Size
     limit = colony_Size * num_Variables
-    
-    
 
     for _ in range(colony_Size):
         solution = np.random.uniform(LB, UB, num_Variables)
