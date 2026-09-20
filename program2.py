@@ -124,7 +124,7 @@ UB = 5.0
 
 best_Solution, best_Fitness, trial = abc_algorithm(objective_function, num_Variables, colony_Size, num_iterations, LB, UB)
 
-print("=====Artificial Bee Colony=====")
+print("======Artificial Bee Colony======")
 print("Best solution:", best_Solution)
 print("Best Fitness:", best_Fitness)
 print("Trial: ", trial)
