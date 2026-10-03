@@ -123,7 +123,7 @@ def abc_algorithm(objective_function, distance_matrix, num_cities, colony_Size, 
                 best_Solution = new_solution
                 best_Fitness = new_fit
 
-        if (iterations + 1) % 5 == 0:
+        if (iterations + 1) % 4 == 0:
             print(f"Iteration {iterations+1}: Best Fitness = {best_Fitness}")
             print(f"Best Solution = {best_Solution}\n")
 

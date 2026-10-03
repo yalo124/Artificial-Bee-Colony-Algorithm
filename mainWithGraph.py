@@ -20,6 +20,7 @@ def abc_algorithm(objective_function, num_Variables, colony_Size, num_iterations
     history = []
     trial_history = []
 
+    #initialization
     for _ in range(colony_Size):
         solution = np.random.uniform(LB, UB, num_Variables)
         obj_func = objective_function(solution)
@@ -144,7 +145,7 @@ average_trial = [sum(t)/len(t) for t in trial_history]
 
 plt.subplot(1,2,2)
 plt.plot(trial)
-plt.xlabel(num_iterations)
+plt.xlabel("Food Source Index")
 plt.ylabel("Trial Count")
 plt.title("Trial Count")
 plt.grid()
